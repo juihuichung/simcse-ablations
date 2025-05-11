@@ -2,9 +2,9 @@
 
 The aims of our project are to validate the author’s claims by reproducing the BERT-base SimCSE ([Gao et al., 2021](https://arxiv.org/abs/2104.08821)) model's results on the same semantic textual similarity (STS) tasks, as well as to propose and experiment with four new model ablations to improve different components of the model:
 
-- **Batch-Aware Linear Dropout Schedule**: Adjusts the dropout rate linearly based on the training step within each batch, allowing finer control over regularization dynamics.
+- **Batch-Aware Linear Dropout Schedule**: Adjusts the dropout rate linearly based on the training step within each batch.
 
-- **Layer-Aware Linear Dropout Schedule**: Assigns dropout rates that vary across encoder layers to regularize layers differently, aiming to preserve information in lower layers while regularizing higher layers more aggressively.
+- **Layer-Aware Linear Dropout Schedule**: Assigns dropout rates that vary across encoder layers.
 
 - **Different Pooling Methods**: Investigates alternatives to `[CLS]` pooling, including mean pooling, max pooling, first/last-layer averaging, and attention-based pooling, to evaluate their effect on embedding quality.
 
